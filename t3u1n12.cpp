@@ -6,13 +6,13 @@ int main(){
     int x, y;
     cout << "x= ";
     cin >> x;
-    cout << "y= "
+    cout << "y= ";
     cin >> y;
     if (abs(x) < 40 || abs(y) < 40){
-        cout << "Да"
+        cout << "Да";
     }
     else if (abs(x) < 40 || abs(y) < 40){
-        cout << "На границе"
+        cout << "На границе";
     }
     return 0;
 }
