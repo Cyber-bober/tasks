@@ -1,15 +1,25 @@
 #include <iostream>
 #include <cmath>
+
 using namespace std;
 
-int main(){
-    float a, b;
-    cout << "Введите a и b";
+double f(double x) {
+    return cos(2*x) + sin(x - 3);
+}
+
+int main() {
+    double a, b;
+    cout << "a: ";
     cin >> a;
+    cout << "b: ";
     cin >> b;
-    float x = cos(2 * a) + sin (a - 3);
-    float y = cos(2 * b) + sin(b - 3);
-    if (x < y) cout << x;
-    else if (y < x) cout << y;
-    return 0;
+    double value_a = f(a);
+    double value_b = f(b);
+    cout << "значение в точке А: " << value_a << endl;
+    cout << "значение в точке B: " << value_b << endl;
+    if (value_a < value_b) {
+        cout << "в точке a значение меньше";
+    } else {
+        cout << "в точке b значение меньше";
+    }
 }
