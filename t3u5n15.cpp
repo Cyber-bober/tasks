@@ -9,7 +9,7 @@ const double eps = 1e-12;
 
 void f(int x)
 {
-    if (abs(x) < eps || x < -1-eps)
+    if (abs(x) < eps ||  (abs(3 * x) < eps))
         cout << "функция неопределена";
     else cout << log(abs(3*x)*sqrt(2*(x^5)-1));
 }
