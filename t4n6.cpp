@@ -2,14 +2,14 @@
 #include <cmath>
 using namespace std;
 int main(){
-    double b1 = 2, b;
+    double b = 2;
     int n;
     cout << "n = "; cin >> n;
     for (int i = 2; i <= n; i++)
     {
-        b = 0.5*((1/b1)+b1);
-        b1 = b;
+        b = 0.5*((1/b)+b);
+        b = b;
+        cout << "b" << i << " = " << b << endl;
     }
-    cout << "b" << n << " = " << b << endl;
     return 0;
 }
