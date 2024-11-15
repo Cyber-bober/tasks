@@ -7,7 +7,7 @@ int main(){
     cout << "n = "; cin >> n;
     for (int i = 2; i <= n; i++)
     {
-        b = 0.5*((1/b)+b);
+        b = 0.5*((1/b1)+b1);
         b1 = b;
     }
     cout << "b" << n << " = " << b << endl;
