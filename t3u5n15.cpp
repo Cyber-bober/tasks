@@ -7,11 +7,11 @@ const double eps = 1e-12;
 /*вспомогательная функция: выводит значение функции в точке х или сообщение о том, что
 функция не определена*/
 
-void f(int x)
+void f(double x)
 {
-    if (abs(x) < eps ||  (abs(3 * x) < eps))
-        cout << "функция неопределена";
-    else cout << log(abs(3*x)*sqrt(2*(x^5)-1));
+    if ((x < eps) || ((2*pow(x,5)-1) < eps))
+        cout << "=Функция неопределена";
+    else cout << log(abs(3*x)*sqrt(2*(pow(x,5))-1));
 }
 
 int main() //главная функция
