@@ -4,7 +4,7 @@
 using namespace std;
 int main() {
 	double s = 0;
-	double a = -1;
+	double a = 1.0;
 	int i = 2;
 
 	double e;
@@ -14,7 +14,7 @@ int main() {
 	while (abs(a)>= e) {
 		s += a;
 		i++;
-		a *= 5/((i+1)*(i-1));
+		a *= 5.0/((i+1)*(i-1));
 
 	}
 	cout << s;
