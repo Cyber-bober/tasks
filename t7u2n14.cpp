@@ -12,7 +12,7 @@ int main() {
 
     size_t pos; //Size_t - беззнаковый целочисленный тип
     while ((pos = s.find(s0)) != string::npos) {  //npos - проверка до конца строки
-        s.erase(pos, s0.length();
+        s.erase(pos, s0.length());
     }
     cout << s;
   
